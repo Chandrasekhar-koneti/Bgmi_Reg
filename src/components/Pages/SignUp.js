@@ -14,15 +14,13 @@ const SignUp=()=>{
     const emailref=useRef()
     const passref=useRef()
     const conpassref=useRef()
-    const [pwdError, setPwdError] = useState(false);
-    const [emailErr, setEmailErr] = useState(false);
-    const [conpwdError, setConpwdError]=useState(false)
+   
     const [error,setError]= useState('')
 
     const storedToken=localStorage.getItem('tokenId')
     useEffect(()=>{
         dispatch(authActions.login(storedToken))
-    })
+    },[dispatch,storedToken])
 
     const submitHandler=(e)=>{
         e.preventDefault()

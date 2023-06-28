@@ -18,7 +18,7 @@ const SignIn=()=>{
    const storedToken=localStorage.getItem('tokenId')
    useEffect(()=>{
     dispatch(authActions.login(storedToken))
-   },[])
+   },[dispatch,storedToken])
 
    const submitHandler=(e)=>{
     e.preventDefault()
@@ -43,7 +43,6 @@ const SignIn=()=>{
         if(res.ok){
             localStorage.setItem('enteredemail',enteredEmail)
             return res.json()
-            console.log('signin done')
         }
         else{
             return res.json().then((data)=>{
