@@ -2,14 +2,14 @@ import { Carousel } from "react-bootstrap";
 import bgmi from '../images/bgmi1.jpg'
 import cod from '../images/cod.jpg'
 import { Fragment } from "react";
-import Nav_Header from "./Navbar";
+import NavHeader from "./Navbar";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 
-const Dummy=()=>{
+const Home=()=>{
     return (
       <Fragment>
-        <Nav_Header />
+        <NavHeader />
         <Carousel>
           <Carousel.Item>
            <Link to='/bgmi'> <img
@@ -43,4 +43,4 @@ const Dummy=()=>{
         </Fragment>
       );
 }
-export default Dummy
+export default Home

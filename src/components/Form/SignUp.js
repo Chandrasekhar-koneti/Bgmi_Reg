@@ -78,7 +78,7 @@ const SignUp=()=>{
             dispatch(authActions.login(data.idtoken))
             console.log('signup done')
             alert('Account created')
-            History('/')
+            History('/signup')
             setError('')
         }).catch((error)=>{
             // alert(error.message)
@@ -112,7 +112,7 @@ const SignUp=()=>{
                     </div>
 
                 </form>
-                    <Link to='/'><Button style={{marginTop:'0.5rem'}} variant='outline-info' >Have an Account?</Button></Link>
+                    <Link to='/signup'><Button style={{marginTop:'0.5rem'}} variant='outline-info' >Have an Account?</Button></Link>
 
             </section>
         </Fragment>

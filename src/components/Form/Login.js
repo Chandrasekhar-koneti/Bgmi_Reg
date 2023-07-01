@@ -56,7 +56,7 @@ const SignIn=()=>{
     }).then((data)=>{
         dispatch(authActions.login(data.idToken))
         console.log('signIIIIN DONE')
-        History('/dummy')
+        History('/')
     }).catch((error)=>{
         alert(error)
     })

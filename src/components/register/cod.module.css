@@ -1,5 +1,5 @@
 
-.container{
+.containe{
     display: flex;
     align-items: center;
     justify-content:space-around;
@@ -10,7 +10,7 @@
     background-color:rgba(0, 0, 0, 0.452);
 }
 
-.container img{
+.containe img{
     align-items: center;
     border: 1px solid white;
     border-radius: 4px;
@@ -18,7 +18,7 @@
     width: 5rem;
 }
 
-.container h1,h2,h3{
+.containe h1,h2,h3{
     color: white;
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -28,7 +28,7 @@
 }
 
 @media screen and (max-width:375px){
-    .container{
+    .containe{
         display:grid;
         align-items: center;
         justify-content:space-around;
@@ -40,7 +40,7 @@
         background-color: rgba(0, 0, 0, 0.452);
     }
     
-.container img{
+.containe img{
     align-items: center;
     border: 1px solid white;
     border-radius: 4px;
@@ -48,10 +48,9 @@
     width: 3rem;
 }
 
-.container h1,h2,h3{
+.containe h1,h2,h3{
     color: white;
     font-weight: bold;
-    /* font-size: small; */
 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-shadow: .1em .1em .1em red;
@@ -62,7 +61,7 @@
 }
 
 @media screen and (min-width:376px )and (max-width: 460px) {
-    .container{
+    .containe{
         display:flex;
         align-items: center;
         justify-content:space-around;
@@ -74,7 +73,7 @@
         background-color: rgba(0, 0, 0, 0.452);
     }
     
-.container img{
+.containe img{
     align-items: center;
     border: 1px solid white;
     border-radius: 4px;
@@ -82,7 +81,7 @@
     width: 3rem;
 }
 
-.container h1,h2,h3{
+.containe h1,h2,h3{
     color: white;
     font-weight: bold;
     font-size:large;
@@ -95,7 +94,7 @@
 }
 
 @media screen and (min-width:461px )and (max-width: 800px){
-    .container{
+    .containe{
         display:flex;
         align-items: center;
         justify-content:space-around;
@@ -107,7 +106,7 @@
         background-color: rgba(0, 0, 0, 0.452);
     }
     
-.container img{
+.containe img{
     align-items: center;
     border: 1px solid white;
     border-radius: 4px;
@@ -115,10 +114,9 @@
     width: 3rem;
 }
 
-.container h1,h2,h3{
+.containe h1,h2,h3{
     color: white;
     font-weight: bold;
-    /* font-size:large; */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-shadow: .1em .1em .1em red;
     border-radius: 5px;
